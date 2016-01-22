@@ -1,0 +1,60 @@
+/**
+ *
+ * @author Manuel San Antonio Morales
+ *
+ *
+ *
+ * Root created to set default accent color for all view items, taken from modena.css.
+ */
+.root {
+	-fx-accent:#01fbcf;
+	-fx-focus-color:#01fbcf;
+}
+/**
+ * Background image added with cover size value in order to fit it to window size.
+ */
+.background {
+    -fx-background-color: #9ee4f9;
+    -fx-background-size:cover;
+}
+
+.label {
+    -fx-font-size: 43pt;
+    -fx-font-family: "Narkisim";
+    -fx-text-fill: #3d71ff;
+    -fx-opacity: 1;
+}
+
+/**
+ * Setting a default button style (border color,width, font family, etc.).
+ */
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #d686ec;
+    -fx-border-width: 3;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-focus-color;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: derive(#01fbcf,50%);
+}
+
+/**
+ * Setting up a change color when any button is pressed.
+ */
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #49b7fb;
+}
+
+.button:focused {
+    -fx-border-color: #d686ec, #d686ec;
+    -fx-border-width: 2, 2;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
